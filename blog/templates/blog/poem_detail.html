@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=j, initial-scale=1.0">
+    <title>{{poem.title}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/poem_detail.css' %}">
+  </head>
+  <body>
+ <div class="nav-wrapper">
+      <div class="nav-content">
+        <div class="nav-logo">
+           <a href="{% url 'blog' %}">Shahriar's Blog</a>
+
+        </div>
+        <div class="nav-options">
+          <div class="nav-poemlist"><a href="{% url 'poemlist' %}">Poems</a></div>
+          <div class="nav-bloglist"><a href="{% url 'bloglist' %}">Blogs</a></div>
+          <div class="nav-about"><a href="{% url 'about' %}">About Me</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pd-wrapper">
+      <div class="pd-container">
+        <header class="pd-header">
+          <div class="pd-title"><p><strong>{{poem.title}}</strong></p></div>
+          <div class="pd-date"><small>{{poem.published_date|date:"F j, Y"}}</small></div>
+        </header>
+        <div class="pd-content">
+          <p>{{poem.content|linebreaksbr}}</p>
+        </div> 
+      </div>
+    </div>
+     <footer>
+          <div class="footer-container">
+            <div class="footer-logos">
+              <div class="instagram"><a href="https://www.instagram.com/shahriarrafsun/"><img src="{% static 'assets/instagram.svg' %}" height="20px" width="20px" alt=""></a></div>
+              <div class="facebook"><a href="https://www.facebook.com/md.rafsun.79"><img src="{% static 'assets/facebook.svg' %}" height="20px" width="20px" alt=""></a></div>
+              <div class="twitter"><a href="https://www.x.com/RafsunShahriar"><img src="{% static 'assets/twitter.svg' %}" height="20px" width="20px" alt=""></a></div>
+            </div>
+              <div class="contact"><small>shahriarrafsun@gmail.com</small></div>
+          </div>
+        </footer>
+
+  </body>
+</html>
+

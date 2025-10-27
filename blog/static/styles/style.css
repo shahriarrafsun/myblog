@@ -1,0 +1,298 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'PT Sans', 'Hind Siliguri', sans-serif;
+  min-height: 100vh;
+  background-color: #eeeeee;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navigations {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.shahriarBlog {
+  font-family: "Caveat", sans-serif;
+  font-size: 50px;
+  border-bottom: 1px solid #2a4759;
+  color: #2a4759;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 28px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: green;
+  transition: height 0.2s ease-in-out,
+    font-size 0.2s ease-in-out,
+    border-bottom-width 0.2s ease-in-out;
+
+}
+
+.nav a:hover {
+  color: red;
+  font-size: 30px;
+}
+
+.poems,
+.blogs,
+.about_me {
+  width: 100%;
+  height: 50px;
+}
+
+/*
+ * Base Styles (For Tablet and Desktop Screens)
+ */
+.nav-wrapper {
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.nav-content {
+  width: 90%;
+  max-width: 1200px;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.nav-options {
+  display: flex;
+  width: auto;
+  column-gap: 20px;
+  align-items: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 21px;
+}
+
+.nav-options a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-options a:hover {
+  color: grey;
+}
+
+.nav-options a:active {
+  color: #f79b72;
+}
+
+.nav-logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-logo a:hover {
+  color: #f79b72;
+}
+
+.nav-logo {
+  font-family: 'Caveat', sans-serif;
+  font-size: 40px;
+}
+
+/*
+ * Media Query for Small Screens (<= 600px)
+ * This switches the layout to stack the logo and links vertically.
+ */
+@media (max-width: 600px) {
+  .nav-wrapper {
+    /* Allow the wrapper to grow in height when content stacks */
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav-content {
+    /* Stack the logo and options vertically */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    /* Make it wider on mobile */
+    gap: 10px;
+    /* Space between logo and the list of links */
+    padding: 10px 0;
+  }
+
+  .nav-options {
+    /* Make options full width and distribute links evenly */
+    width: 100%;
+    justify-content: space-around;
+    font-size: 18px;
+    /* Slightly smaller font for better mobile fit */
+  }
+
+  .nav-logo {
+    /* Reduce logo size slightly */
+    font-size: 30px;
+  }
+}
+
+/* style.css changes (Focus on .pagination) */
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  /* Keeps the pagination centered */
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #ddd;
+}
+
+.pagination {
+  display: flex;
+  /* REMOVE width: 50%; to avoid unnecessary width constraints */
+  /* width: 50%; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* Ensure centering within the wrapper */
+}
+
+/* Ensure the step-links justify their content to keep elements together */
+.step-links {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  column-gap: 10px;
+  /* Make sure items are centered inside this wrapper */
+  align-items: center;
+  justify-content: center;
+}
+
+.current {
+  height: 30px;
+  width: 30px;
+  background-color: #2a4759;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page-next {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  background-color: white;
+  border: 1px solid #2a4759;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page-next a {
+  text-decoration: none;
+  color: black;
+}
+
+.page-next a:hover {
+  color: #f79b72;
+}
+
+.page-prev {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  background-color: white;
+  border: 1px solid #2a4759;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page-prev a {
+  text-decoration: none;
+  color: black;
+}
+
+.page-prev a:hover {
+  color: #f79b72;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+}
+
+.footer-logos {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.contact {
+  text-align: center;
+  color: grey;
+}
