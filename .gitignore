@@ -6,8 +6,6 @@ __pycache__/
 *.pyd
 
 # Django
-*.sqlite3
-/staticfiles/
 media/
 .env
 

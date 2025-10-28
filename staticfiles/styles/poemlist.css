@@ -1,0 +1,142 @@
+.poemlist-wrapper {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 30px;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.poemlist-container {
+  position: relative;
+  top: auto;
+  margin-top: 8vh;
+  width: 90%;
+  max-width: 1000px;
+  padding: 0 15px;
+}
+
+.poemlist-entry {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  min-height: 250px;
+  background-color: white;
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.poemlist-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1px;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  width: 90%;
+  max-width: 700px;
+  height: 80px;
+  padding: 1em 1em;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.poemlist-header a {
+  text-decoration: none;
+  color: #f77734;
+}
+
+.poemlist-header a:hover {
+  color: #f79;
+}
+
+.poemlist-title {
+  font-size: 26px;
+  word-wrap: break-word;
+}
+
+.poemlist-date {
+  margin-bottom: 5px;
+  height: 20px;
+  color: grey;
+}
+
+.poemlist-content {
+  position: relative;
+  top: auto;
+  height: auto;
+  max-height: 200px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.poemlist-content p {
+  text-align: center;
+  margin: 0;
+  max-width: 700px;
+}
+
+.read-more {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.read-more a {
+  text-decoration: none;
+  color: #f79;
+}
+
+.read-more a:hover {
+  color: #F79B7F;
+}
+
+@media (max-width: 600px) {
+  .poemlist-container {
+    padding: 0 5px;
+  }
+
+  .poemlist-entry {
+    min-height: 200px;
+    margin-top: 4vh;
+    margin-bottom: 0;
+  }
+
+  .poemlist-header {
+    height: auto;
+    padding: 0.5em 0.5em;
+  }
+
+  .poemlist-title {
+    font-size: 20px;
+  }
+
+  .poemlist-content {
+    padding: 0 3%;
+  }
+
+  .poemlist-content p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,115 @@
+.about-wrapper {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 30px;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  /* Keep relative */
+}
+
+.about-container {
+  position: relative;
+  top: auto;
+  margin-top: 8vh;
+  width: 90%;
+  max-width: 1000px;
+  padding: 0 15px;
+}
+
+.about-entry {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  min-height: 250px;
+  background-color: white;
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.about-shahriar {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  row-gap: 5vh;
+}
+
+.about-text {
+  padding: 0 5px;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  color: #555555;
+}
+
+.about-photo {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.about-intro-container {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  row-gap: 4vh;
+  margin-bottom: 4vh;
+}
+
+.about-intro-text {
+  padding: 4px;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+
+.about-interest-container {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  row-gap: 4vh;
+  margin-bottom: 4vh;
+}
+
+.about-interest-text {
+  padding: 4px;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+
+.about-bucket-container {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  row-gap: 4vh;
+  margin-bottom: 4vh;
+}
+
+.about-bucket-text {
+  padding: 4px;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    padding: 0 5px;
+  }
+
+  .about-entry {
+    min-height: 200px;
+    margin-top: 4vh;
+  }
+}
